@@ -1,0 +1,65 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input{
+    border-radius: 0;
+}
+
+body {
+    background: #DCE35B;
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);
+    background: linear-gradient(to right, #45B649, #DCE35B);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 20rem;
+
+    .title {
+        color: white;
+        font-weight: 700;
+        font-size: 1.7rem;
+        padding-bottom: .6em;
+        text-align: center;
+    }
+    .form {
+        background-color: #E0DFDF;
+        padding: 1.5rem;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-flow: column nowrap;
+
+        &__input {
+            border: none;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            
+            &__button {
+                background-color: #47B649;
+                color: #FFF;
+
+                &:hover {
+                    background-color: #71C34E;
+                    color: #FFF;
+                }
+
+                &:focus {
+                    background-color: #2ba82d;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
